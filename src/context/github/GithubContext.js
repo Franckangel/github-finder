@@ -113,13 +113,13 @@ export const GithubProvider = ({children}) => {
     const setLoading = () => dispatch({type: 
     'SET_LOADING'})
     return <GithubContext.Provider value={{
-        /*
+        
         users: state.users,
         loading: state.loading,
         user: state.user,
-        */
+        
        //The code above is an equivalent to the spread operaator below
-       ...state,
+      // ...state,
         searchUsers,
         clearUsers,
         getUser,

@@ -48,7 +48,7 @@ function UserSearch() {
             </div>
         </form>
       </div>
-      {users.length > 0 && (<div>
+      {users && users.length > 0 && (<div>
             <button className="btn-ghost btn-lg" onClick={clearUsers}>
                 Clear
             </button>
